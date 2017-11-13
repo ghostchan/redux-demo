@@ -1,6 +1,6 @@
 import {createStore} from './redux';
 import $ from 'jquery';
-$('document.body').append(`
+$('body').append(`
 <p id="counter"></p>
 <button id="increaseBtn">+</button>
 <button id="decreaseBtn">-</button>
