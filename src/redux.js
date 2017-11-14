@@ -7,7 +7,7 @@ const createStore = reducer => {
   let getState = () => state;
   //向仓库发送action
   let dispatch = action => {
-    //传入老的state和action，返回新的action
+    //传入老的state和action，返回新的state
     state = reducer(state, action);
     listeners.forEach(listener => listener());
   };
